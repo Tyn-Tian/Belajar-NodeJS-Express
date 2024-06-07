@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     res.send(`Hello ${type}`);
 });
 
-test('Test Query Parameter', async () => {
+test('Test Request Header', async () => {
     const response = await request(app)
     .get("/")
     .set("Accept", "text/plain")

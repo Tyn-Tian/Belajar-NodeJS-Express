@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
     res.send(`Hello Response`);
 });
 
-test('Test Query Parameter', async () => {
+test('Test Response', async () => {
     const response = await request(app).get("/").query({ name: "Tian" });
     expect(response.text).toBe("Hello Response");
 });
